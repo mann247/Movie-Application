@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search|TMBD</title>
+    <link rel ="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+    <h1>Choose a movie.</h1>
+
+    <form id="searchForm" autocomplete="off">
+        <input id="query" placeholder="Movie Title (e.g., Do The Right Thing)" required/>
+        <button>Search</button> 
+    </form>
+
+    <section id="similarSearchSection" hidden>
+    <h2>Similar Movies.</h2>
+    <ul id="results" class="grid"></ul>
+    </section>
+
+    <section id="similarSection" hidden>
+        <h2>More movies similar to "<span id="pickedTitle"></span>"</h2>
+        <ul id="similar" class="grid"></ul>
+    </section>
+</main>
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- http://localhost:3000/   (for testing)-->
